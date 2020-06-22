@@ -1,0 +1,46 @@
+.navbar {
+  background: rgb(255, 121, 0);
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(255, 121, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 48%,
+    rgba(0, 154, 73, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(255, 121, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 48%,
+    rgba(0, 154, 73, 1) 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(255, 121, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 48%,
+    rgba(0, 154, 73, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7900",endColorstr="#009a49",GradientType=1);
+}
+.navbar-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-text {
+  color: #212529;
+
+}
+nav {
+  margin-bottom: 10px;
+}
+.list-group {
+    margin-top: 10px;
+}
+.left-background {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+#now-weather {
+    margin-bottom: 20px;
+}
+#five-day-forecast {
+border-color: white;
+}
