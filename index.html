@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Weather Dashboard</title>
+    <title>Gabriel's Weather Dashboard</title>
   </head>
   <body>
     <nav class="navbar">
@@ -23,7 +23,7 @@
         <h1 class="header-text">Gabriel's Weather Dashboard</h1>
       </span>
     </nav>
-    <div class="container">
+    <div class="container-flex">
       <div class="row">
         <div class="col-3 left-background">
           <p>Search for a city</p>
@@ -42,78 +42,22 @@
             </div>
           </div>
           <div class="appended-cities">
-            <!-- This will be used as a Javascript item -->
             <ul class="list-group">
-              <!-- <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li> -->
+              <!-- city names will go here -->
             </ul>
-            <!-- End -->
           </div>
         </div>
         <div class="col-9">
           <div class="row" id="now-weather">
-            <div class="col w-20">
-              <!-- This will be used as a Javascript item -->
-              <div class="card">
-                <div class="card-body w-100">
-                  <h2 id="city-title">Placeholder</h2>
-                </div>
-              </div>
-              <!-- End -->
-            </div>
+            <!-- Today's weather will go here -->
           </div>
           <div class="row" id="future-weather">
-            <!-- This will be used as a Javascript item -->
-            <div class="col-12">
-              <div class="card" id="five-day-forecast">
-                <div class="card-body"><h2>5 Day Forecast</h2></div>
-              </div>
-            </div>
-            <div class="col w-20">
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
-            </div>
-            <div class="col w-20">
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
-            </div>
-            <div class="col w-20">
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
-            </div>
-            <div class="col w-20">
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
-            </div>
-            <div class="col w-20">
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
-            </div>
-            <!-- End -->
+            <!-- 5 Day Forecast will go here -->
           </div>
         </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
     <script src="script.js"></script>
   </body>
 </html>

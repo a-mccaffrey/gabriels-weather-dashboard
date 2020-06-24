@@ -28,9 +28,9 @@
   color: #212529;
 
 }
-nav {
+/* nav {
   margin-bottom: 10px;
-}
+} */
 .list-group {
     margin-top: 10px;
 }
@@ -41,6 +41,21 @@ nav {
 #now-weather {
     margin-bottom: 20px;
 }
+#future-weather {
+  padding: 20px;
+}
 #five-day-forecast {
 border-color: white;
+}
+.light-danger {
+  background-color: #FF4500;
+}
+/* #spacer {
+  height: 300px;
+} */
+.container-flex {
+  padding: 20px;
+}
+#forecast-title {
+  border-width: 0px;
 }
