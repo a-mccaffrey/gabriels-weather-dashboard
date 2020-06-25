@@ -34,8 +34,8 @@ THEN I am presented with the last searched city forecast
 
 The following image demonstrates the application functionality and its responsive for 2 devices (mobile still a challenge):
 
-![Gabriel's Weather Dashboard - laptop](./Assets/laptop-view.png)
-![Gabriel's Weather Dashboard - tablet](./Assets/ipad-view.png)
+![Gabriel's Weather Dashboard - laptop](https://github.com/a-mccaffrey/gabriels-weather-dashboard/blob/master/assets/laptop-view.png?raw=true)
+![Gabriel's Weather Dashboard - tablet](https://github.com/a-mccaffrey/gabriels-weather-dashboard/blob/master/assets/ipad-view.png?raw=true)
 
 
 Created by Aisling McCaffrey
