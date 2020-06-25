@@ -19,6 +19,13 @@
     rgba(0, 154, 73, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7900",endColorstr="#009a49",GradientType=1);
+  margin: 0px 0px 20px 0px;
+}
+.nopad {
+  padding: 0;
+}
+.padded-area {
+  padding: 20px;
 }
 .navbar-center {
   margin-left: auto;
@@ -26,36 +33,57 @@
 }
 .header-text {
   color: #212529;
-
 }
 /* nav {
   margin-bottom: 10px;
 } */
 .list-group {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .left-background {
-    background-color: #f8f9fa;
-    padding: 20px;
+  background-color: #f8f9fa;
+  padding: 20px;
 }
 #now-weather {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 #future-weather {
   padding: 20px;
 }
 #five-day-forecast {
-border-color: white;
+  border-color: white;
 }
 .light-danger {
-  background-color: #FF4500;
-}
-/* #spacer {
-  height: 300px;
-} */
-.container-flex {
-  padding: 20px;
+  background-color: #ff4500;
 }
 #forecast-title {
   border-width: 0px;
+}
+/*Downloaded from https://www.codeseek.co/JacobLett/adjust-bootstrap-4-card-deck-responsive-breakpoint-rWXJPV */
+/* Set width to make card deck cards 100% width */
+@media (max-width: 1217px) {
+  .card-deck {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .card-deck .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    vertical-align: top;
+  }
+}
+@media (max-width: 690px) {
+  .card-deck {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .card-deck .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    vertical-align: top;
+  }
 }

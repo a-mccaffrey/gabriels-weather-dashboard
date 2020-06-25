@@ -14,50 +14,52 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Gabriel's Weather Dashboard</title>
   </head>
   <body>
-    <nav class="navbar">
-      <span class="navbar-text navbar-center">
+    <nav class="navbar nopad">
+      <span class="navbar-text navbar-center nopad">
         <h1 class="header-text">Gabriel's Weather Dashboard</h1>
       </span>
     </nav>
-    <div class="container-flex">
-      <div class="row">
-        <div class="col-3 left-background">
-          <p>Search for a city</p>
-          <div class="input-group form-2 pl-0">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Search"
-              aria-label="Search"
-              id="search-term"
-            />
-            <div class="input-group-append">
-              <span class="input-group-text red lighten-3" id="search-button">
-                <i class="fas fa-search text-grey" aria-hidden="true"></i>
-              </span>
+    <div class="padded-area">
+      <div class="container-flex padded-area">
+        <div class="row">
+          <div class="col-3 left-background">
+            <p>Search for a city</p>
+            <div class="input-group form-2 pl-0">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+                id="search-term"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text red lighten-3" id="search-button">
+                  <i class="fas fa-search text-grey" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+            <div class="appended-cities">
+              <ul class="list-group">
+                <!-- city names will go here -->
+              </ul>
             </div>
           </div>
-          <div class="appended-cities">
-            <ul class="list-group">
-              <!-- city names will go here -->
-            </ul>
-          </div>
-        </div>
-        <div class="col-9">
-          <div class="row" id="now-weather">
-            <!-- Today's weather will go here -->
-          </div>
-          <div class="row" id="future-weather">
-            <!-- 5 Day Forecast will go here -->
+          <div class="col-9">
+            <div class="row" id="now-weather">
+              <!-- Today's weather will go here -->
+            </div>
+            <div class="row" id="future-weather">
+              <!-- 5 Day Forecast will go here -->
+            </div>
           </div>
         </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>

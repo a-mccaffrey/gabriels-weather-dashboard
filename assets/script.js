@@ -51,13 +51,13 @@ $(document).ready(function () {
         cityName +
         "&appid=95bb3d64f0b9a132feede210ed2ba803&units=metric",
     }).then(function (output) {
-      // I could either make the search on the side only store unique variables, or have the 
-      // localstorage remember the last item search (whether clicked or entered). So I went 
+      // I could either make the search on the side only store unique variables, or have the
+      // localstorage remember the last item search (whether clicked or entered). So I went
       // with the less messy looking option.
       if (prevSearched.indexOf(cityName) == -1) {
         prevSearched.push(cityName);
-          localStorage.setItem("prevSearched", JSON.stringify(prevSearched));
-          storeCity(cityName);
+        localStorage.setItem("prevSearched", JSON.stringify(prevSearched));
+        storeCity(cityName);
       }
 
       // empty the now-weather for a new query
@@ -131,25 +131,28 @@ $(document).ready(function () {
         cityName +
         "&appid=95bb3d64f0b9a132feede210ed2ba803&units=metric",
     }).then(function (output) {
-      // have to make a somewhat complicated title area because I want the text to align properly with the title in the above area
+      // Have to make a somewhat complicated title area because I want the text to align properly with the title in the above area
       $("#future-weather").html(
         "<div class='col-12'> <div class='card' id='forecast-title'> <div class='card-title'><h2>5 Day Forecast</h2></div> </div> </div>"
       );
-      // figured out that a card deck is the way to go for lining everything up nicely
+      // Figured out that a card deck is the way to go for lining everything up nicely
       var cardDeck = $("<div>").addClass("card-deck");
-// loop based on the number of outputs we get from the ajax call
+      // Loop based on the number of outputs we get from the ajax call which is 5
       for (var i = 0; i < output.list.length; i++) {
         if (output.list[i].dt_txt.indexOf("15:00:00") !== -1) {
+          // Make a title area for the forecast
           var futureTitle = $("<h5>")
             .addClass("card-title")
+            // make the title (date)
             .text(new Date(output.list[i].dt_txt).toLocaleDateString());
+          // make the emoticon
           var futureImage = $("<img>").attr(
             "src",
             "https://openweathermap.org/img/w/" +
               output.list[i].weather[0].icon +
               ".png"
           );
-
+          // make cards and contents
           var futureCard = $("<div>").addClass("card");
           var futureCardBody = $("<div>").addClass("card-body");
           var futureHumid = $("<p>").text(
@@ -158,7 +161,7 @@ $(document).ready(function () {
           var futureTemp = $("<p>").text(
             "Average Temperature: " + output.list[i].main.temp + " °C"
           );
-
+          // append it all
           futureCard.append(
             futureCardBody.append(
               futureTitle,
